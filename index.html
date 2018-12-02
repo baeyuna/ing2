@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style>
+	body{background-image: url('./img/noise2.gif');}
+	@font-face { font-family: 'Kanibuk'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.5/Kanibuk.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+		h1,h2,h3,h4,p {font-family: 'Kanibuk', serif;text-decoration: none; color:black;}
+
+	p{font-size: 1em; line-height: 1.9; margin:0; text-align: justify; color:#2a2492;}
+
+	header{width:1920px; background-color:rgba(237,237,235,0.5); margin:auto;}
+	section{width:1920px; background-color:rgba(237,237,235,0.5); margin:auto;}
+	footer {width:1920px; background-color:rgba(237,237,235,0.5); margin:auto;}
+	img{display: block;}
+
+	.firstbox{width:1200px; height:800px; margin: auto; background-color:rgba(237,237,235,0.5); font-weight: bold;}
+	.firstbox2{width:1200px; height:280px; margin: auto; background-color:rgba(237,237,235,0);}
+	.css-typing p{border-right: .15em solid orange; font-size: 18.50px; white-space: nowrap; overflow: hidden; color:#2a2492;}
+	.css-typing p:nth-child(1) {width: 1180px; animation: type 4s steps(40, end); animation-fill-mode: forwards; margin-left:20px;}
+	.css-typing p:nth-child(2) {width: 1180px; opacity: 0; animation: type2 4s steps(40, end); animation-delay: 4s;animation-fill-mode: forwards; margin-left: 20px;}
+	.css-typing p:nth-child(3) {width: 1180px; opacity: 0; animation: type3 4s steps(40, end), blink .4s step-end infinite alternate; animation-delay: 8s; animation-fill-mode: forwards;  margin-left: 15px;}
+
+@keyframes type {
+  0% {width: 0;}
+  99.9% {border-right: .15em solid orange;}
+  100% {border: none;}}
+
+@keyframes type2 {
+  0% {width: 0;}
+  1% {opacity: 1;}
+  99.9% {border-right: .15em solid orange;}
+  100% {opacity: 1; border: none;}}
+
+@keyframes type3 {
+  0% {width: 0;}
+  1% {opacity: 1;}
+  100% {opacity: 1;}}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+	.imagebox1{width:1200px; height:800px; margin: auto; background-color:rgb(237,237,235);}
+
+	.statistics{width:1200px; height:600px; margin: auto; background: black; color:white;}
+
+	.symptom{width:1200px; height:650px; margin:auto; background-color:rgba(237,237,235,0.5);}
+	.box1-5{width:820px; height:550px; float:left; margin-right: 60px; background-color:rgba(255,255,255,0.6);}
+	.box2{width:820px; height:650px; float:left; margin-right: 60px; background-color:rgba(255,255,255,0.6);}
+	.titlepara:hover {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+  background-color: #fe3000;
+  color:white;
+  font-size: 1.5em; font-weight: bold;
+  width:320px;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+	.box1-50{width:260px; height:550px; float:left; background-color:rgba(255,255,255,0);}
+	.box20{width:260px; height:650px; float:left; background-color:rgba(255,255,255,0);}
+
+	.bigtext{width:1200px; height:800px; margin:auto; background-color:rgba(237,237,235,0.5);}
+	.big{font-size: 2em; font-weight: bold; padding-top:420px; padding-left:40px; color:#fe3000;}
+
+
+	#slideCon { position: relative;  width:1200px; height:600px; margin:auto; overflow: hidden;}
+	.mySlides { position: absolute; width:100%;height:600px; background-position: left top; cursor:pointer; }
+	.mySlides a{display: block;}
+	#sl1{ background-image: url('./img/cat1.jpg'); }
+	#sl2{ background-image: url('./img/cat2.jpg'); }
+	#sl3{ background-image: url('./img/cat3.jpg'); }
+	#sl4{ background-image: url('./img/cat4.jpg'); }
+	#sl5{ background-image: url('./img/cat5.jpg'); }
+	#sl6{ background-image: url('./img/cat6.jpg'); }
+
+	.prev,.next { cursor: pointer; position: absolute; top: 300px; width: auto; padding: 16px; margin-top: -50px; color: white; font-size: 40px; border-radius: 0 3px 3px 0; user-select: none; -webkit-user-select: none; z-index: 35;}
+
+	.next { right: 0; border-radius: 3px 0 0 3px; }
+	.prev:hover, .next:hover { cursor:pointer; background-color: rgba(0, 0, 0, 0.8); }
+	.imagebox2-1{width:1200px; height:170px; margin: auto; background-color:rgba(237,237,235,0.5);}
+	.textbox2-1{width:1200px; height:150px; margin: auto; background-color:rgba(255,255,255,0.6);}
+	.imagebox2-2{width:1200px; height:800px; margin: auto; background-color:rgba(237,237,235,0.5);}
+	.textbox2-2{width:1200px; height:550px; margin: auto; background-color:rgba(255,255,255,0.6);}
+	.explaincat:hover {color:#fe3000; font-weight: bold; font-size: 1.1em; text-align: right;}
+
+	.example{width:1200px; height:670px; margin:auto; background:orange;}
+	.box3{width:720px; height:564px; float:left; margin-right: 60px; background: green;}
+	.box30{width:360px; height:564px; float:left; background: green;}
+
+	.explain{width:1200px; height:670px; margin:auto; background:white;}
+	.box4{width:720px; height:564px; float:left; margin-right: 60px; background: purple;}
+	.box40{width:360px; height:564px; float:left; background: purple;}
+
+	.vedio{width:1200px; height:900px; margin:auto; background-color:rgba(237,237,235,0.5);}
+	.hashtag{padding-left:50px; padding-right:50px; background-color:rgba(255,255,255,0.6); }
+
+	.movie{width:1200px; height:780px; margin:auto; background-color:rgba(237,237,235,0.5); color:#2a2492;}
+	.box5{width:500px; height:750px; float:left; margin-top:30px;  margin-left:50px; margin-right:100px; opacity: 0.8;}
+	.box50{width:500px; height:750px; float:left; margin-top:30px; opacity: 0.8;}
+
+	.movie2{width:1200px; height:394px; margin:auto; background-color:rgba(237,237,235,0.5);}
+	.box6{width:500px; height:300px; float:left; margin-top:30px;  margin-left:50px; margin-right:100px;  background-color:rgba(255,255,255,0.6); color:#2a2492;}
+	.box60{width:500px; height:300px; float:left; margin-top:30px; background-color:rgba(255,255,255,0.6); color:#2a2492;}
+
+	</style>
+</head>
+<body>
+	<header>
+		<div class="firstbox">
+			<div class="firstbox2"></div>
+			<div class="css-typing">
+  <p>조현병은 환각, 망상 및 사고과정의 이상 외에도 의욕 없음, 사회활동 저하, 인지기능 저하 등 많은 정신기능 영역의 손상을 보일 수 있는 병.
+  </p>
+  <p>정신증에 해당하는 증상을 경험하는 사람들 중에서 보다 여러가지 증상을 지속적으로 경험하며 이로 인해 일상 생활에 장애를 겪을 때 진단.
+  </p>
+  <p>조현병은 발병할 경우 만성화되거나 반복적인 재발을 보이는 경우가 많기 때문에 정신증적 증상을 보이는 질환, 상태들 중에서도 중증에 해당.
+  </p>
+</div>
+		</div>
+	</header>
+
+	<section>
+		<div class="imagebox1">
+			<img src="./img/image1.jpg">
+		</div>
+	</section>
+
+	<section>
+		<div class="statistics">통계자료</div>
+	</section>
+
+	<section>
+	 <div class="symptom">
+
+	 <div class="box1-5">
+	 	<p class="titlepara">양성증상(positive symptoms)</p>
+	 	<p>‘더하기(+)’라는 의미로 일반인들에게는 없는 사고, 감정, 또는 행동이 존재하거나, 심하게 나타난다.<br><br>
+① 망상(delusion)<br>
+사실과는 다른 잘못된 생각을 사실로 믿는 것. 다른 사람이 자신을 괴롭힌다는 피해망상, 자신과 아무런 관련이 없는 일을 자신과 관계된 것으로 생각하는 관계망상, 자신이 위대한 인물이라고 믿는 과대망상이 흔하다. 망상은 대화나 설득으로 교정되지 않는다.<br>
+② 환각(hallucination)<br>
+아무런 감각자극이 없는데도 어떤 감각을 경험하는 것. 다섯가지 감각기관에서 모두 가능하며 기관에 따라서 환시, 환청, 환후, 환미, 환촉이라 한다. 조현병 환자에게서는 환청과 환시가 흔하다.<br>
+③ 횡설수설(incoherence)<br>
+말에 조리가 없고 두서가 없어서 대화를 나누어도 무슨 말을 하려는지 이해할 수 없는 것.말을 횡설수설하는 것은 말하는 그 순간에 생각이 뒤죽박죽 혼란되어 있기 때문이며, 따라서 사고장애가 있음을 의미한다.<br>
+④ 이상한 행동(bizzare behavior)<br>
+상식적으로 납득할 수 없는 행동을 하는 것. 기괴, 기이, 혼란된 행동 등으로 혼자서 중얼거리거나, 바보같이 혼자 실실 웃거나, 정처없이 거리를 헤매거나, 똑같은 행동을 계속 반복하거나, 부적절한 자세로 뻣뻣하게 가만히 있는 것 등이 있다. 이상한 행동을 보이는 이유는 망상, 환각, 심한 불안감이나 공포 등이 원인인 경우가 많다.</p>
+		</div>	
+
+	<div class="box1-50">
+	</div>	
+
+	 <div class="clear"></div>
+	</div>
+
+	<div class="symptom">
+
+	<div class="box2">
+	 	<p class="titlepara">음성증상(negative symptoms)</p>
+	 	 <p>‘빼기(-)’라는 의미로 일반인들에게는 있는 사고, 감정, 행동이 존재하지 않거나, 매우 경미한 정도로만 나타난다. 
+	 	 	음성증상은 조현병 증상임을 모르는 경우가 많으며, 우울해졌다거나 게을러졌다고 잘못 생각하는 경우가 많다. <br><br>
+① 감정표현의 결여(blunted affect)<br>
+표정이나 목소리에 변화가 없이 경직되어 있고 무덤덤하며, 높낮이가 없이 단조롭다. 신나는 이야기, 슬픈 이야기를 할 때 무덤덤한 표정과 단조로운 목소리로 이야기해 마치 감정이 얼어붙었거나, 메말라 버린 듯한 느낌이다.<br>
+② 언어의 빈곤(alogia)<br>
+말이 전혀 없거나, 한두마디로 끝낸다. 새로운 화제를 꺼내지 못하며 상대방의 질문에 대하여 예, 아니오로만 대답한다. 말하다 말고 갑자기 말이 없어지며 종종 상대방이 무슨 질문을 했는지, 자신이 무슨 말을 하다 말았는지 잊어 버려서 재차 질문한다.<br>
+③ 무감동(apathy)<br>
+주변에서 일어나는 일, 개인적 경험, 정신병적인 경험에 무관심. 아무것도 하지 않으며 일상적인 간단한 일도 하지 않고 계속 잠만 잔다. 다른 사람과 함께 있는 것을 싫어하고, 사람있는 자리를 피한다.<br>
+④ 무쾌락(anhedonia)<br>
+즐기려 하지 않는다. 아무런 취미활동이나 놀이도 하지 않으며 이전에 좋아하던 일들도 하지 않는다. 흔히들 하는 오락이나 취미생활, 여가생활을 하지 않는다. <br>
+⑤ 주의집중 결함(inattention)<br>
+심하게 주의집중에 결함이 생기면 한가지 일을 꾸준히 하지 못하며, 쉽게 주의가 분산된다. 한가지 일을 십분이상 계속해서 하도록 하면, 불안해하고 초조해하며, 혼자서 엉뚱한 짓을 하거나, 소리를 지르거나, 일어나서 왔다 갔다 한다. 흔히 ‘머리가 아프다’, ‘기억력이 없다’고 호소한다.</p>
+		</div>
+
+	<div class="box20">
+	</div>	
+
+	 <div class="clear"></div>
+	</div>
+	</section>
+
+	<section>
+		<div class="bigtext">
+			<p class="big"> 다양한 생각들이 흘러넘쳐 종양같은 생물들이 내 머리에서 자라나는 것만 같다</p>
+		</div>
+	</section>
+
+	<section>
+		<div class="imagebox2-1">
+			<div class="textbox2-1">
+		<p>평생 고양이를 그린 화가 루이스 웨인은 초창기에는 많은 사랑을 받은 ‘국민화가’로 명성이 높았다. 하지만 화가로서 인기를 누린 것과는 달리 그 개인의 삶은 불행하기 그지없었다. 결혼한 지 2년 만에 아내 에밀리가 병으로 사망했고, 그 뿐만 아니라 돈에 대한 관리개념이 희박해 엉뚱한 곳에 돈을 투자했다가 몽땅 날리기도 했으며, 그림의 저작권에 대한 청구도 하지 않아 작품에 대한 수입은 단지 그림을 그려 팔리는 것뿐이어서 생활고에 시달려야 했다. 말년에는 조현병으로 인해 15년간을 정신병원에서 지내야만 했다. 
+
+		그래서 루이스 웨인의 말년은 정신병원에서 지내야했으며, 병원에 입원 중 그는 피해망상으로 괴로움을 받으면서도 고양이그림을 그리는데서 손을 떼지 않았다. 작품들은 그 작성 시기를 명확히 기록되어있지 않아 보여 지는 그림은 조현병의 증상에 해당된다고 판단한 것이다.</p></div>
+		</div>
+		<div id="slideCon">
+  		<div class="mySlides" id="sl1"><a href="#"> </a></div>
+  		<div class="mySlides" id="sl2"><a href="#"> </a></div>
+  		<div class="mySlides" id="sl3"><a href="#"> </a></div>
+ 		<div class="mySlides" id="sl4"><a href="#"> </a></div>
+  		<div class="mySlides" id="sl5"><a href="#"> </a></div>
+  		<div class="mySlides" id="sl6"><a href="#"> </a></div>
+  		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+  		</div>
+
+		<div class="imagebox2-2">
+			<div class="textbox2-2">
+			<p class="explaincat">
+		조현병이 시작되면 기억력과 집중력이 저하 되고 시간과 공간에 대한 지남력이 감소된다.<br> 본인이 기억하고 있던 고양이의 모습을 회상하거나 재구성하는 능력이 저하.소실되기 때문에 조현병 초기에 그린 작품에서 고양이의 모<br>습은 여러 빛깔과 모양으로 구성된 문양들이 고양이 눈을 둘러싸고 있어 실물고<br>양이의 모습은 사라지고 문양의 집합체그림으로 변했다. 그러나 문양들의 대칭성은 유지되고 있었다. <br><br>
+
+		조현병이 더 진행되면 사고와 지각의 장애는 더욱 심해져 혼자 기이한 생각에 사로잡히거나, 인지기능 저하로 느끼는 좌절, 슬픔 및 고독감 등 감정의 변화 등으로 인해 그림의 적록색 빛깔 사용에서 황록색 물감의 사용이 두드러진 고양이로 변하고 그 눈의 형태마저 문양으로 변했다.<br><br>
+
+		결국 고양이라고 인식할 수 있는 상징은 없어져 거의 추상형태로 일정한 패턴을 가지고 있는 그림이 된다.<br>추상적인 형태는 마치 동양의 신상처럼 화려한 색을 지닌 여러 가지의 작은 형상으로 이루어진 다각형의 모임으로 구성 되어있다.<br> 형체의 이미지는 기묘한 변형을 나타내 이해할 수 없는 형상으로 표현된다.<br> 그러나 이때까지도 문양의 대칭성은 유지된다.<br> 루이스 웨인은 자기 자신을 유지하기 위해 증상과 싸우면서 좌절과 외로움과 분노를 그림을 통해 끊임 없이 표출 시킨 것을 여러 곳에서 볼 수 있다. <br><br>
+
+		고양이의 모습은 전혀 찾아볼 수 없는 형체의 극단적인 추상화가 되어 통일성을 완전히 잃어버리게 된다. 이러한 그림의 변화는 화가가 고양이의 얼굴을 기억하지 못하는데 기인되는 것으로 고양이 얼굴의 모습은 완전히 해체되고 소실되어 무엇을 표현한 그림인지 알 수 없는 추상화가 돼 버렸다. </p>
+	</div>
+	</div>
+	</section>
+
+	<section>
+	 <div class="example">
+
+	 <div class="box3">
+	 	<p>예싷ㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎ</p>
+		</div>	
+
+	<div class="box30">
+	</div>	
+
+	 <div class="clear"></div>
+	</div>
+
+	</section>
+
+	<section>
+	 <div class="explain">
+
+	 <div class="box4">
+	 	<p>오해와 진실에 대한 글<Br>
+	 		한국 사회에서 요즘 조현병에 대한 관심이 새삼 높아지고 있다. 비극적인 범죄 사건 가해자들이 조현병 병력을 가진 것으로 보도되거나 추정되고 있기 때문이다. 안타까운 현실이다. 피해자 가족은 물론 많은 국민이 마음 아파한다. 범죄의 동기를 이해하기 어렵기 때문에 우발적 범죄의 대상이 될 것에 대한 두려움은 가중되고 정부에 조속한 해결책을 요구하는 것은 당연하다. 다만 격리와 같은 즉각적인 처방들의 경우, 현상에 대한 정확한 사실에 기반을 둔 대책이기보다는 감정적 접근으로 오히려 해결의 실마리를 잃고 헤맬 수 있다는 점에 유의해야 할 것이다. 
+  
+조현병을 비롯한 중증정신질환과 범죄 사이에서 연관성이 발견되지 않는다는 점이다. 3만명이 넘는 방대한 미국 인구통계 자료에서 폭력 행동을 예측하는 요인들을 분석한 결과 한 개인의 폭력 행동을 예측하는 것은 중증장애 여부가 아니라 약물 남용·아동 학대를 포함한 불우한 환경과 폭력에 의한 피해 등이었다. 
+  
+한국의 검찰청 통계에 따르면 2016년 발생한 절도·폭력 등 각종 범죄에서 정신장애인들에 의한 범죄 비율은 대략 2%였다. 강력 범죄는 0.5%로 조사됐다. 전 세계적으로 일관되게 낮은 비율이 보고됐다. 그렇다면 최근 정신질환자에 의한 범죄 건수가 급격하게 증가한다는 언론의 통계 보도는 어떻게 이해해야 할까. 
+  
+검찰청 자료를 자세히 살펴보면 한국에서 정신장애 관련 강력범죄 건수가 증가한 것은 2014년으로, 전년도에 300여명에서 700여명으로 급증한다. 그런데 바로 같은 해 한국에서 전체 강력범죄 건수도 비슷한 비율로 급증한 사실을 발견할 수 있다. 따라서 전체 강력범죄에서 정신장애 관련 범죄 건수의 비율 증가는 동년 2.19%에서 2.46%로 약간 증가해 그 비율이 유지되고 있음을 확인할 수 있다. 지금 보고되는 정신장애 관련 강력 범죄 건수의 증가는 전체 강력 범죄 건수 증가의 맥락에서 이해하는 것이 더 정확할 것이다. 망상·환각 등 기괴한 생각과 행동을 보이는 정신증 상태는 조현병 환자에게서만 관찰되는 것이 아니라는 점도 주목해야 한다. 정신증의 경우 조현병을 비롯한 중증 정신장애 환자 외에도 심한 트라우마 피해자, 치매를 비롯한 뇌 손상 환자들에게서도 관찰된다. 
+  
+지난 6일 노모를 살해한 가해자의 경우 교통사고 이후 정신 이상이 관찰돼 뇌 손상 병력이 의심됐으나 조현병 환자라고 성급하게 단정적으로 보도된 것은 유감스러운 일이다. ‘정신이상=조현병’이란 공식은 조현병을 겪는 사람들에 대한 편견을 부채질할 수 있다. 실제로 조현병 환자들은 중증 정신장애인들로, 폭력의 가해자이기보다는 피해자일 가능성이 더 높다.   
+  
+최신 미국 의학회지(JAMA)에 덴마크 경찰청의 대규모 정신질환자를 대상으로 한 폭력 피해 연구 결과가 실렸다. 이에 따르면 기존의 편견과 정반대로, 모든 정신질환자는 폭력 범죄의 가해자가 아니라 피해자가 될 확률이 높으며, 이는 피해자가 촉발하지 않은 범죄들로 조사됐다.   
+  
+또한 여러 나라의 조사들에서 어린 시절 아동학대를 당한 중증 정신장애인은 10명 중 3~7명이었다. 일반인들의 경우보다 매우 높게 보고됐다. 부모에 의한 학대 외에도 학교나 이웃으로부터 당한 폭력의 빈도가 높은 것으로 나타났다. 
+  
+마지막으로 조현병은 격리 및 관리의 대상이 아니라 보살핌의 대상이어야 한다는 것이 학계의 중론이다. 선진국은 지역 사회를 기반으로 한 중증 정신장애 케어 시스템이 이미 자리 잡았는데 한국은 이제 막 시작됐다. 증상의 재발을 방지하기 위해 꾸준한 약물 복용과 함께 정서적으로 도움을 주는 환경의 중요성이 오래전에 확인됐다. 이에 선진국에서는 정신건강 전문의와 함께 심리학자·사회복지사·간호사와 같은 정신건강 전문가들이 공동으로 참여한다. 이러한 접근 방법이 무조건적인 격리보다 더 효과적인 이유는 인간 행동의 다차원적인 요인들에 대한 총체적인 이해를 가능하게 하기 때문이다. 그뿐만 아니라 질환의 예후와 관련된 다양한 평가도 가능해져 이에 기반을 둔 적정한 인지 및 사회 재활로 이어질 수 있다.   
+  
+이제 한국도 객관적인 사실과 과학에 기반을 둔 중증정신질환 정책들과 지역사회 케어 시스템이 제대로 구축될 수 있도록 정부와 전문가들이 함께 노력할 필요가 있다.
+</p>
+		</div>	
+
+	<div class="box40">
+	</div>	
+
+	 <div class="clear"></div>
+	</div>
+
+	</section>
+
+	<section>
+	 <div class="vedio">
+	 	<iframe width="1200" height="675" src="https://www.youtube.com/embed/fxdQadd5W70" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	 	<p class="hashtag">#조현병 #조현병 증상 #조현병 체험 #조현병 치료 #조현병 영화 #조현병 환자 #조현병 범죄 #다큐멘터리  #마음의 줄을 연주하다 #내 말 좀 들어주세요 # 아프거나 나쁘거나, 조현병 범죄의 진실 #병든 마음의 허상 #국립정신건강센터 #교육영상</p>
+	 </div>
+	</section>
+
+	<section>
+	 <div class="movie">
+	 	<div class="box5"><img src="./img/poster1.jpg"></div>
+	 	<div class="box50"><img src="./img/poster2.jpg"></div>	
+
+	 <div class="clear"></div>
+	</div>
+	 </div>
+	</section>
+	 <section>
+	 <div class="movie2">
+	 	<div class="box6">
+	 		<p>실화영화로 1940년대 최고의 엘리트들이 모이는 프린스턴 대학원에 장학생으로 입학한 존 내시는 뛰어난 두뇌를 지닌 괴짜 천재이다. 어느 날 섬광 같은 직관으로 '균형이론'의 단서를 발견하고 1949년 27쪽짜리 논문 하나로 150년 동안 지속되어 온 경제학 이론을 뒤집고 신경제학의 새로운 패러다임을 제시했다. 존 내시는 기존 게임이론에 대한 새로운 분석으로 제2의 아인슈타인이라 불린 인물이지만, 50년 동안 조현증에 시달렸다. 그러나 모든 것을 이겨내고 1994년 노벨상을 수상, 영화보다 더 극적인 삶을 살았다. 천재성으로 점점 황폐해져 가는 존 내시의 영혼과 그 영혼을 치유하기 위해 자신을 희생한 그의 아내 알리샤의 사랑과 감동의 스토리를 담고 있는 영화이다. 
+	 		</p>
+	 	</div>
+	 	<div class="box60">
+	 		<p>1977년 수 차례의 강간 및 무장강도 사건으로 체포되었고, 1978년에 해리성 정체 장애 정신질환자로 밝혀져 무죄를 선고받은 23개의 자아를 가지고 있는 실존인물인 빌리 밀리건을 모티브로 삼았은 영화이다. 23개의 인격을 가진 남자 ‘케빈’은 언제 누가 등장할지 모르는 인격들 사이를 오가며 유일하게 자신을 이해하는 ‘플레처’ 박사에게만 자신의 이야기를 꺼내 놓는다. 어느 날, ‘케빈’은 지금까지 등장한 적 없는 24번째 인격의 지시로 3명의 소녀들을 납치하고 오래도록 계획했던 비밀스러운 일을 꾸민다. 소녀들이 그에게서 도망치려 할수록 ‘케빈’의 인격들은 점차 폭주하기 시작하는데… 그 안의 수 많은 인격 중 누가, 누구를 위해 움직이는가</p>
+	 	</div>	
+
+	 <div class="clear"></div>
+	</div>
+	 </div>
+
+	</section>
+
+<script>
+var slideIndex = 1;
+var prevIndex = 6;
+showSlides(slideIndex);
+var slideTimer = setInterval(plusS, 2000);
+
+(function(){
+      slideCon.onmouseover = function(){
+        console.log("over");
+        clearInterval(slideTimer);
+      }
+      slideCon.onmouseout = function(){
+        console.log("out");
+        slideTimer = setInterval(plusS, 2000);
+      }
+})();
+
+function plusS() { plusSlides(1); }
+function plusSlides(n) { showSlides(slideIndex += n);}
+function currentSlide(n) { showSlides(slideIndex = n);}
+function showSlides(n) {
+  var i=0, slides = document.getElementsByClassName("mySlides");
+  
+  if (n > slides.length) {slideIndex = 1};
+  if (n < 1) {slideIndex = slides.length};
+  
+    for(i=0; i< slides.length; i++){
+      slides[i].style.zIndex = "29";
+    }
+    
+    slides[slideIndex - 1].style.zIndex = "31";
+    slides[prevIndex - 1].style.zIndex = "30";
+
+    if(slideIndex > prevIndex){
+      slides[slideIndex - 1].style.animationName = "example";
+      slides[prevIndex - 1].style.animationName = "example4";
+    }else{
+      slides[slideIndex - 1].style.animationName = "example2";
+      slides[prevIndex - 1].style.animationName = "example3";
+    }   
+  prevIndex = slideIndex;
+
+}
+</script>
+
+
+
+
+
+
+
+	
+</body>
+</html>
